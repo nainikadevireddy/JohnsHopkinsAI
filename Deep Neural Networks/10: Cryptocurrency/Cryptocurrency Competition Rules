@@ -1,0 +1,55 @@
+# Cryptocurrency Price Forecasting Competition
+
+## Description
+
+In this competition, students forecast the **closing price** of one cryptocurrency based on historical OHLCV data (Open, High, Low, Close, Volume). The goal is not just to match the magnitude of prices, but to align the **directional movements** of the forecast with the true closing prices.
+
+The dataset is adapted from the G-Research Crypto Forecasting competition on Kaggle and provides time series data with equidistant timestamps. Submissions are evaluated using the **Pearson correlation coefficient** between predicted and actual closing prices.
+
+---
+
+## Evaluation Metric
+
+- **Pearson Correlation Coefficient**  
+  Measures the linear correlation between predicted and observed closing prices. A high score indicates your predictions **move in the same direction** as the true prices, even if the magnitude differs.
+
+Learn more:
+- [Pearson Correlation (Wikipedia)](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)
+- [G-Research Crypto Forecasting Evaluation Guide](https://www.kaggle.com/c/g-research-crypto-forecasting/overview/evaluation)
+- [Tutorial Notebook](https://www.kaggle.com/cstein06/tutorial-to-the-g-research-crypto-competition)
+
+---
+
+## Allowed Methods & Tools
+
+Students were permitted to use:
+- **Model Types:** RNN, LSTM, GRU, 1D Convolutional Layers, regression slope on subintervals
+- **Frameworks:** Keras, TensorFlow, PyTorch, scikit-learn
+- **Techniques:** Clustering, dimensionality reduction, outlier detection/treatment, feature engineering, hyperparameter tuning, sampling strategies, regularization, stepwise selection
+- **Hardware:** CPU, GPU, TPU
+
+---
+
+## Files in This Folder
+
+- **Google Colab Notebook:** Full implementation and experiments for the forecasting models
+- **Submission CSV Template:** Sample file in the required format:
+id, Close
+500000,0
+500001,0
+…
+524430,0
+- **Dataset CSV File:** Input Data
+
+---
+
+## Citation
+
+Oleg Melnikov. *24mar25-Crypto*. Kaggle, 2025.  
+Competition link: [https://kaggle.com/competitions/24mar25-crypto](https://kaggle.com/competitions/24mar25-crypto)
+
+---
+
+## Acknowledgements
+
+Special thanks to G-Research for providing the original crypto dataset and to Oleg Melnikov for organizing the competition.
